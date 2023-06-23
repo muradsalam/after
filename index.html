@@ -38,8 +38,18 @@
             transition: .6;
             transform: rotate(0deg);
         }
-        .r:hover{
+
+        .r:hover {
             transform: rotate(-30deg);
+        }
+
+        .r:hover~h1 {
+            transition: 2s;
+            scale: 1;
+        }
+
+        h1 {
+            scale: 0;
         }
 
         .r:hover~.top {
@@ -55,6 +65,7 @@
 
     <div class="gapici"><img src="qapici.png" width="100px"></div>
     <div class="top"><img src="top.png" width="30px"></div>
+    <h1>GOAL!!!</h1>
 </body>
 
 </html>
